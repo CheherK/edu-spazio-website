@@ -8,7 +8,7 @@ import { createUtilisateurParams, updateUtilisateurParams } from 'utils/userType
 
 @Injectable()
 export class UtilisateursService {
-  constructor(@InjectRepository(Utilisateur) private utilisateurRepository: Repository<Utilisateur>,) {
+  constructor(@InjectRepository(Utilisateur) private utilisateurRepository: Repository<Utilisateur>) {
 
   }
   create(createUtilisateurParams: createUtilisateurParams) {
@@ -25,7 +25,7 @@ export class UtilisateursService {
 
   }
 
-  async findOne(id: number) {
+   findOne(id: number) {
     return this.utilisateurRepository.findOne({ where: { id } });
   }
   update(id: number, UpdateUtilisateurParams: updateUtilisateurParams) {

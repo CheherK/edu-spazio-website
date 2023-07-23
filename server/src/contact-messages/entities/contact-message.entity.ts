@@ -11,5 +11,7 @@ export class ContactMessage {
     @Column()
     email:string;
     @Column()
+    tel:number;
+    @Column()
     message:string;
 }
