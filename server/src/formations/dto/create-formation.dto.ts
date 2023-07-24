@@ -11,12 +11,12 @@ export class CreateFormationDto {
         description: 'time of training session',
         example: '8 march 2023 14h'
     })
-    time:string;
+    time:Date;
     @ApiProperty({
         description: 'duration of the training session',
         example: '4h'
     })
-    duration:number;
+    duration:string;
     @ApiProperty({
         description: 'class that will do the training session',
         example: '1 ére année prepa'

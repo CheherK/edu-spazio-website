@@ -17,7 +17,6 @@ export class CreateUtilisateurDto {
         description: 'the birth day of the user',
         example: 'march 08,2000'
     })
-
     birthDay: Date;
     @ApiProperty({
         description: 'the url  for image of the user',

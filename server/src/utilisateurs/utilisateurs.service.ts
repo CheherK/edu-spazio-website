@@ -12,26 +12,25 @@ export class UtilisateursService {
 
   }
   create(createUtilisateurParams: createUtilisateurParams) {
-    const parsedBirthDay = new Date(createUtilisateurParams.birthDay); // Parse birthDay to a Date object
+    const birthDay = new Date(createUtilisateurParams.birthDay);
+
+    // Create a new user entity and assign the converted Date object
     const newUser = this.utilisateurRepository.create({
-      birthDay: parsedBirthDay,
       ...createUtilisateurParams,
+      birthDay: birthDay,
     });
+    
     return this.utilisateurRepository.save(newUser);
   }
-
   findAll() {
     return this.utilisateurRepository.find();
-
   }
-
    findOne(id: number) {
     return this.utilisateurRepository.findOne({ where: { id } });
   }
   update(id: number, UpdateUtilisateurParams: updateUtilisateurParams) {
     return this.utilisateurRepository.update({ id }, { ...UpdateUtilisateurParams });
   }
-
   remove(id: number) {
     return this.utilisateurRepository.delete({ id });
   }
