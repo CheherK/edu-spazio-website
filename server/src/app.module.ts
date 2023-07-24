@@ -20,7 +20,7 @@ import { Formation } from './formations/entities/formation.entity';
     username:'root',
     password:'p3uh36CBgYfjYV8ck2PK',
     database:'edu_spazio_mysql',
-    entities:[Utilisateur,Reservation,Formation],
+    entities:[Utilisateur,Reservation,Formation,],
     synchronize:true,
   })],
   controllers: [AppController],

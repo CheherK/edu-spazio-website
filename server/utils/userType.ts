@@ -24,3 +24,19 @@ export type updateUtilisateurParams={
     admin:boolean;
     paid:boolean;
 }
+export type createContactMessageParams={
+    id:number;
+    firstName:string;
+    lastName:string;
+    email:string;
+    tel :number
+    message:string;
+}
+export type updateContactMessageParams={
+    id:number;
+    firstName:string;
+    lastName:string;
+    email:string;
+    tel :number
+    message:string;
+}

@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  edu_spazio_server:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+    networks:
+      - app_net
+
+  db:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=p3uh36CBgYfjYV8ck2PK
+      - MYSQL_DATABASE=edu_spazio_mysql
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=p3uh36CBgYfjYV8ck2PK
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - app_net
+
+networks:
+  app_net:
+
+volumes:
+  db_data:
