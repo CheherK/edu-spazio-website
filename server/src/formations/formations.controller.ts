@@ -1,4 +1,5 @@
 import { Controller, Get, Post, Body, Put, Param, Delete ,ParseIntPipe} from '@nestjs/common';
+import { Controller, Get, Post, Body, Put, Param, Delete ,ParseIntPipe} from '@nestjs/common';
 import { FormationsService } from './formations.service';
 import { CreateFormationDto } from './dto/create-formation.dto';
 import { UpdateFormationDto } from './dto/update-formation.dto';

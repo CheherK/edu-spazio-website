@@ -1,11 +1,17 @@
 import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty } from "@nestjs/swagger";
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity({name:'formation'})
 export class Formation {
     @ApiProperty({ description: 'Primary key as training session ID', example: 1 })
+    @ApiProperty({ description: 'Primary key as training session ID', example: 1 })
     @PrimaryGeneratedColumn()
     id:number;
+    @ApiProperty({
+        description: 'subject name',
+        example: 'python'
+    })
     @ApiProperty({
         description: 'subject name',
         example: 'python'

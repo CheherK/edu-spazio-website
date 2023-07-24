@@ -26,3 +26,4 @@ export class UpdateFormationDto extends PartialType(CreateFormationDto) {
     class:string;
 
 }
+
