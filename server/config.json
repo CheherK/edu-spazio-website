@@ -1,0 +1,10 @@
+{
+    "database": {
+      "host": "db",
+      "port": 3306,
+      "username": "root",
+      "password": "p3uh36CBgYfjYV8ck2PK",
+      "database_name": "edu_spazio_mysql"
+    }
+  }
+  

@@ -24,3 +24,4 @@ export type updateUtilisateurParams={
     admin:boolean;
     paid:boolean;
 }
+
