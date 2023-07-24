@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './routes/header/header.component'
 import './App.css'
 import LandingPage from './routes/landing-page/landing-page.component';
+import './App.css';
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
         <Route index element={<LandingPage />} />
       </Route>
     </Routes>
-  )
+  );
 }
 
-export default App 
+export default App;
