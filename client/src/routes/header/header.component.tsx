@@ -1,7 +1,6 @@
 import { Box, AppBar, Toolbar, Button } from '@mui/material';
 import Logo from "../../assets/logo-edu-spazio.png";
 import { Outlet } from 'react-router-dom';
-import { flexbox } from '@mui/system';
 
 const Header = () => {
 
@@ -9,7 +8,7 @@ const Header = () => {
       <>
          <Box sx={{ flexGrow: 1 , }}>
             <AppBar position="static">
-               <Toolbar sx={{ display: flexbox, justifyContent: 'space-between' }}>
+               <Toolbar sx={{ display: "flex", justifyContent: 'space-between' }}>
                   <img src={Logo} alt="Logo" style={{ height: 40, marginRight: 16 }} />
                   <div>
                   <Button color="inherit" sx={{ marginLeft: 2 }}>HOME</Button>
@@ -22,6 +21,7 @@ const Header = () => {
                </Toolbar>
             </AppBar>
          </Box>
+         
          <Outlet />
       </>
    );
